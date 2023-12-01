@@ -28,6 +28,7 @@ textarea {
     transition: background-color ease 0.5s;
     font-size: 16px;
     letter-spacing: 1px;
+    resize: none;
 }
 textarea.dark {
     background-color: #4f5155;
