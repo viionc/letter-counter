@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    transition: all ease 0.5s;
+    width: 100%;
+}
+
+body.dark {
+    background-color: #272727;
+}
+h1 {
+    transition: all ease 0.5s;
+    letter-spacing: 1px;
+}
+h1.dark {
+    color: white;
+}
+
+textarea {
+    width: 90%;
+    height: 80vh;
+    transition: background-color ease 0.5s;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+textarea.dark {
+    background-color: #4f5155;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 2px 16px;
+    height: 32px;
+    min-width: 60px;
+    min-height: 32px;
+    border: none;
+    color: #fff;
+    transition: background-color ease 0.5s, transform ease 0.5s;
+    background-color: #272727;
+}
+.float {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.button:hover {
+    transform: scale(1.1);
+}
+.button:focus {
+    outline: 2px solid white;
+}
+.button.dark {
+    background-color: antiquewhite;
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    textarea {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    textarea {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    textarea {
+        width: 900px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    textarea {
+        width: 1024px;
+    }
+}
