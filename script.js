@@ -7,16 +7,16 @@ const fontSizeRangeWrapper = document.querySelector(".range-wrapper");
 
 const useLocalStorage = (key, value) => {
     if (typeof value !== "undefined") {
-        JSON.stringify(localStorage.setItem(key, value));
+        localStorage.setItem(key, value);
     } else {
-        return JSON.parse(localStorage.getItem(key));
+        return localStorage.getItem(key);
     }
 };
 
-let darkModeEnabled = useLocalStorage("darkMode") ?? false;
+let darkModeEnabled = JSON.parse(useLocalStorage("darkMode")) ?? false;
 
 const updateCounter = () => {
-    useLocalStorage("textarea", `"${textareaElement.value}"`);
+    useLocalStorage("textarea", textareaElement.value);
     counterElement.innerText = textareaElement.value.length;
 };
 
