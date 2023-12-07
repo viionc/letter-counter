@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: #d2ecff;
     transition: all ease 0.5s;
     width: 100%;
 }
@@ -64,7 +64,7 @@ textarea.dark {
     outline: 2px solid white;
 }
 .button.dark {
-    background-color: antiquewhite;
+    background-color: #d2ecff;
     color: black;
 }
 
